@@ -1,0 +1,46 @@
+#library {
+    display: table;
+}
+
+.toggleRead {
+    width: 160px;
+    text-align: left;
+    margin: 5px;
+}
+
+.delete {
+    width: 20px;
+    text-align: right;
+    margin: 5px;
+
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    width: 180px;
+    height: 240px;
+    font-size: 15;
+    margin: 10px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px 10px;
+    border: 1.5px solid black;
+    transition: all 0.3s ease;
+}
+
+.book .optionBar {
+    width: 100%;
+    display: flex;
+    top: 0;
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+  
+  .book:hover .optionBar {
+    color: black;
+    opacity: 1;
+  }
+  
